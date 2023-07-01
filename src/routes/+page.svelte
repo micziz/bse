@@ -20,12 +20,14 @@
 <style>
     .h1{
         text-align: center;
+        margin-top: 20rem;
     }
 
     .form-container{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 3rem;
     }
 
     .form{

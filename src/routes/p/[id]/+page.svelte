@@ -66,4 +66,8 @@
         justify-content: center;
         align-items: center;
     }
+
+    .image{
+        margin-top: 3rem;
+    }
 </style>
