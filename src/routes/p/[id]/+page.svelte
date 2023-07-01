@@ -9,11 +9,14 @@
     const nameToUseInImgUrl = lastName.toLowerCase().slice(0, 5) + firstName.toLowerCase().slice(0, 2)
     const imgUrl = `https://www.basketball-reference.com/req/202106291/images/headshots/${nameToUseInImgUrl}01.jpg`
 
-    const teamShortName: string = data.data.team.abbreviation
+    let teamShortName: string = data.data.team.abbreviation
+    if (teamShortName == "BKN"){
+        teamShortName = "NJN"
+    }
     const teamUrl = `https://cdn.ssref.net/req/202306191/tlogo/bbr/${teamShortName}.png`
     console.log(data.data)
 
-    
+
 </script>
 
 {#if data.error}

@@ -1,2 +1,22 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import { goto } from "$app/navigation";
+
+    let query: string;
+
+    function redirect(){
+        goto(`/search?search=${query}`)
+    }
+</script>
+
+<h1 class="h1">Basketball Search Engine</h1>
+
+<form on:submit|preventDefault={redirect}>
+    <input type="text" bind:value={query}>
+</form>
+
+
+<style>
+    .h1{
+        text-align: center;
+    }
+</style>
