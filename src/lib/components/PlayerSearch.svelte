@@ -8,11 +8,6 @@
 
 <style>
 
-    .link{
-        margin-top: 2rem;
-        margin-left: 2rem;
-    }
-
     a {
         text-decoration: none;
         color: inherit;
